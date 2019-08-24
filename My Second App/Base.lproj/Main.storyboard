@@ -103,6 +103,9 @@
                                 <rect key="frame" x="64" y="729" width="286" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Button"/>
+                                <connections>
+                                    <action selector="changeCarTemp:" destination="J6a-yc-MNv" eventType="touchUpInside" id="3j7-Dg-kfp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urD-o0-rJ0">
                                 <rect key="frame" x="64" y="802" width="286" height="42"/>
@@ -130,16 +133,121 @@
                     </view>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="BackToContinue" id="UNu-xm-F9Y"/>
+                        <segue destination="qyD-LF-9Is" kind="showDetail" identifier="toCarTemp" id="4r1-EL-nEg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bjw-eU-hGB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="925" y="138"/>
         </scene>
-        <!--View Controller-->
+        <!--Contact Mechanic-->
+        <scene sceneID="HZo-RL-YtK">
+            <objects>
+                <viewController storyboardIdentifier="ContactMechanic" id="797-Nb-prF" customClass="ContactMechanic" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcn-UH-YQF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background Image" translatesAutoresizingMaskIntoConstraints="NO" id="onH-3V-vqV">
+                                <rect key="frame" x="-3" y="-7" width="419" height="904"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Porsche Car" translatesAutoresizingMaskIntoConstraints="NO" id="bBx-9W-EdD">
+                                <rect key="frame" x="-617" y="465" width="1040" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fc-77-urB">
+                                <rect key="frame" x="63" y="813" width="286" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Car Mechanic Buttton 2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Le-o7-i3P">
+                                <rect key="frame" x="20" y="80" width="39" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Trans Circle"/>
+                                <connections>
+                                    <action selector="backToOverview:" destination="qyD-LF-9Is" eventType="touchUpInside" id="SKy-qX-EMj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="evt-Ou-PpR">
+                                <rect key="frame" x="27" y="87" width="21" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Full Name Text" translatesAutoresizingMaskIntoConstraints="NO" id="4CJ-DY-zsQ">
+                                <rect key="frame" x="41" y="111" width="119" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Send Message Text" translatesAutoresizingMaskIntoConstraints="NO" id="njO-84-YYZ">
+                                <rect key="frame" x="116" y="790" width="181" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Message Text" translatesAutoresizingMaskIntoConstraints="NO" id="Qtd-G4-Frj">
+                                <rect key="frame" x="51" y="322" width="99" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Message Textbox" translatesAutoresizingMaskIntoConstraints="NO" id="upm-ax-DlC">
+                                <rect key="frame" x="45" y="355" width="322" height="422"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Email Address Text" translatesAutoresizingMaskIntoConstraints="NO" id="pO2-GF-ne6">
+                                <rect key="frame" x="41" y="191" width="157" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JD2-k1-iBi"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vc7-ga-APT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="920.28985507246387" y="841.74107142857144"/>
+        </scene>
+        <!--Success Message-->
+        <scene sceneID="eNn-u3-zyB">
+            <objects>
+                <viewController storyboardIdentifier="SuccessMessage" id="gOE-P7-5Ts" customClass="SuccessMessage" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cqR-ce-aB0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background Image" translatesAutoresizingMaskIntoConstraints="NO" id="Yvk-bX-FSs">
+                                <rect key="frame" x="-2" y="-7" width="419" height="904"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Porsche Car" translatesAutoresizingMaskIntoConstraints="NO" id="zLv-I4-r9w">
+                                <rect key="frame" x="-616" y="465" width="1040" height="554"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Success Message Text" translatesAutoresizingMaskIntoConstraints="NO" id="5DV-dK-DFY">
+                                <rect key="frame" x="87" y="84" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yfd-RB-93W">
+                                <rect key="frame" x="64" y="267" width="286" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Success Message Button"/>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Return To Car Diagnostics Text" translatesAutoresizingMaskIntoConstraints="NO" id="3jq-Nt-X3M">
+                                <rect key="frame" x="112" y="242" width="190" height="101"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Please Check Email Text" translatesAutoresizingMaskIntoConstraints="NO" id="iOU-B7-oHQ">
+                                <rect key="frame" x="66" y="138" width="283" height="145"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="79S-O4-Rea"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jD7-si-btz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1679.7101449275362" y="841.74107142857144"/>
+        </scene>
+        <!--Car Temp View-->
         <scene sceneID="hre-7r-uJe">
             <objects>
-                <viewController id="qyD-LF-9Is" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarTempView" id="qyD-LF-9Is" customClass="CarTempView" customModule="My_Second_App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RcL-li-X9L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -148,10 +256,79 @@
                                 <rect key="frame" x="-5" y="-3" width="424" height="903"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rjd-AT-1CJ">
+                                <rect key="frame" x="17" y="73" width="39" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Trans Circle"/>
+                                <connections>
+                                    <action selector="backToOverview:" destination="qyD-LF-9Is" eventType="touchUpInside" id="dco-mz-BcI"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Temp Circles" translatesAutoresizingMaskIntoConstraints="NO" id="YbZ-on-xkE">
+                                <rect key="frame" x="29" y="110" width="356" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXV-In-ud0">
+                                <rect key="frame" x="248" y="490" width="96" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="White Circle"/>
+                                <connections>
+                                    <action selector="plusTemp:" destination="qyD-LF-9Is" eventType="touchUpInside" id="nuA-Fw-Bdl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX7-xN-jWc">
+                                <rect key="frame" x="83" y="490" width="96" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="White Circle"/>
+                                <connections>
+                                    <action selector="minusTemp:" destination="qyD-LF-9Is" eventType="touchUpInside" id="pWB-2o-KM8"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Plus Sign " translatesAutoresizingMaskIntoConstraints="NO" id="0Sa-sS-AIV">
+                                <rect key="frame" x="238" y="511" width="117" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Minus Sign" translatesAutoresizingMaskIntoConstraints="NO" id="Ris-U9-ITP">
+                                <rect key="frame" x="75" y="508" width="112" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ym-9L-a5v">
+                                <rect key="frame" x="151" y="157" width="113" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="PingFangHK-Regular" family="PingFang HK" pointSize="110"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Degrees Celsius Text" translatesAutoresizingMaskIntoConstraints="NO" id="v3u-CQ-g5M">
+                                <rect key="frame" x="130" y="354" width="155" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOE-Bg-Ixe">
+                                <rect key="frame" x="64" y="665" width="286" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Button"/>
+                                <connections>
+                                    <action selector="setTempPressed:" destination="qyD-LF-9Is" eventType="touchUpInside" id="u0o-nx-Kvj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Set Temp Text" translatesAutoresizingMaskIntoConstraints="NO" id="I16-K4-pbr">
+                                <rect key="frame" x="107" y="640" width="201" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Back Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="DBj-WO-LQV">
+                                <rect key="frame" x="25" y="80" width="21" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3DH-3F-Ffm"/>
                     </view>
+                    <connections>
+                        <outlet property="setTemperaturePressed" destination="DOE-Bg-Ixe" id="jgs-Ib-feJ"/>
+                        <outlet property="temperatureNumber" destination="9ym-9L-a5v" id="z5n-dT-xhQ"/>
+                        <segue destination="J6a-yc-MNv" kind="showDetail" identifier="OverviewSegue" id="zdm-0P-hyL"/>
+                        <segue destination="J6a-yc-MNv" kind="presentation" identifier="fromSetTempToOverview" id="AXy-y3-ddg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yL6-2W-aRj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -159,21 +336,42 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Back Arrow" width="13" height="20.5"/>
         <image name="Background Image" width="377" height="814"/>
         <image name="Button" width="286" height="42"/>
+        <image name="Car Mechanic Buttton 2" width="286" height="42"/>
         <image name="Change Temp Text" width="263" height="13"/>
         <image name="Close Text" width="75" height="13"/>
         <image name="Contact Mechanic Text" width="220" height="13"/>
         <image name="Continue Text" width="108" height="13"/>
+        <image name="Degrees Celsius Text" width="205" height="13"/>
+        <image name="Email Address Text" width="176" height="13"/>
+        <image name="Full Name Text" width="129" height="13"/>
+        <image name="Message Text" width="104" height="13"/>
+        <image name="Message Textbox" width="286" height="350"/>
         <image name="Mileage Text" width="93" height="13"/>
+        <image name="Minus Sign" width="31" height="40"/>
         <image name="Model Name" width="134" height="37"/>
         <image name="On Road Text" width="98" height="13"/>
         <image name="Overview Text" width="143" height="16"/>
+        <image name="Please Check Email Text" width="314" height="13"/>
+        <image name="Plus Sign " width="41" height="40"/>
         <image name="Porsche Car" width="870.5" height="266"/>
         <image name="Porsche Logo" width="240" height="274.5"/>
         <image name="Red Button" width="286" height="42"/>
+        <image name="Return To Car Diagnostics Text" width="182" height="29"/>
+        <image name="Send Message Text" width="172" height="13"/>
+        <image name="Set Temp Text" width="218" height="13"/>
+        <image name="Success Message Button" width="286" height="50"/>
+        <image name="Success Message Text" width="246" height="29"/>
+        <image name="Temp Circles" width="259" height="259"/>
         <image name="Today Text" width="75" height="13"/>
+        <image name="Trans Circle" width="80" height="81"/>
         <image name="Upper Design" width="375.5" height="84"/>
+        <image name="White Circle" width="96" height="97"/>
         <image name="White Porsche" width="334" height="222"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="kSA-f8-oNs"/>
+    </inferredMetricsTieBreakers>
 </document>

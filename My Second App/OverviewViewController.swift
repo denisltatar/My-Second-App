@@ -10,6 +10,9 @@ import UIKit
 
 class OverviewViewController: UIViewController {
     
+    @IBAction func changeCarTemp(_ sender: Any) {
+        self.performSegue(withIdentifier: "CarTempView", sender: self)
+    }
     @IBAction func closeButton(_ sender: Any) {
         print("Close is pressed")
         self.performSegue(withIdentifier: "BackToContinue", sender: self)
