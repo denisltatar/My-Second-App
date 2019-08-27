@@ -16,11 +16,13 @@ class CarTempView: UIViewController {
     
     // Our "Set Temperature" button
     @IBAction func setTempPressed(_ sender: Any) {
-        self.performSegue(withIdentifier: "OverviewViewController", sender: self)
+        self.performSegue(withIdentifier: "fromSetTempToOverview", sender: self)
     }
     
+    
+    
     @IBAction func backToOverview(_ sender: Any) {
-        self.performSegue(withIdentifier: "OverviewViewController", sender: self)
+        self.performSegue(withIdentifier: "OverviewSegue", sender: self)
     }
     
     // If the plus button is pressed, we increase carTemp

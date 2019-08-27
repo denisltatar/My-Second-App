@@ -10,7 +10,13 @@ import UIKit
 
 class ContactMechanic: UIViewController {
 
+    @IBAction func backButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toOverview", sender: self)
+    }
     
+    @IBAction func sendMessagePressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "successMessageSegue", sender: self)
+    }
     @IBOutlet weak var fullNameField: UITextField!
     
     @IBOutlet weak var emailAddress: UITextField!
@@ -33,7 +39,7 @@ class ContactMechanic: UIViewController {
     
     @IBAction func sendMessage(_ sender: Any) {
         // First we need to render the text that was placed in by the user
-        textViewField.text = "Full name: \(fullNameField.text!)\nEmail Address: \(emailAddress.text!)\nMessage: \(messageField.text!)";
+         textViewField.text = "Full name: \(fullNameField.text!)\nEmail Address: \(emailAddress.text!)\nMessage: \(messageField.text!)";
         
     }
 }

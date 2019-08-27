@@ -9,9 +9,12 @@
 import UIKit
 
 class OverviewViewController: UIViewController {
+    @IBAction func contactMechanicButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toContactMechanic", sender: self)
+    }
     
     @IBAction func changeCarTemp(_ sender: Any) {
-        self.performSegue(withIdentifier: "CarTempView", sender: self)
+        self.performSegue(withIdentifier: "toCarTemp", sender: self)
     }
     @IBAction func closeButton(_ sender: Any) {
         print("Close is pressed")

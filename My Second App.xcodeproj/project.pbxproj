@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		172F97EA2315D10C0052EA83 /* SuccessMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172F97E92315D10C0052EA83 /* SuccessMessage.swift */; };
 		1770624A230EEEEB006AF260 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17706249230EEEEB006AF260 /* OverviewViewController.swift */; };
 		1770624C230F0AE9006AF260 /* CarTempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1770624B230F0AE9006AF260 /* CarTempView.swift */; };
 		1781C4792314ADC200444B84 /* ContactMechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1781C4782314ADC200444B84 /* ContactMechanic.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		172F97E92315D10C0052EA83 /* SuccessMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessMessage.swift; sourceTree = "<group>"; };
 		17706249230EEEEB006AF260 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		1770624B230F0AE9006AF260 /* CarTempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTempView.swift; sourceTree = "<group>"; };
 		1781C4782314ADC200444B84 /* ContactMechanic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactMechanic.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				17706249230EEEEB006AF260 /* OverviewViewController.swift */,
 				1770624B230F0AE9006AF260 /* CarTempView.swift */,
 				1781C4782314ADC200444B84 /* ContactMechanic.swift */,
+				172F97E92315D10C0052EA83 /* SuccessMessage.swift */,
 				17CAC7E322EB745D00B5DDF0 /* Main.storyboard */,
 				17CAC7E622EB745F00B5DDF0 /* Assets.xcassets */,
 				17CAC7E822EB745F00B5DDF0 /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				1781C4792314ADC200444B84 /* ContactMechanic.swift in Sources */,
 				1770624A230EEEEB006AF260 /* OverviewViewController.swift in Sources */,
 				1770624C230F0AE9006AF260 /* CarTempView.swift in Sources */,
+				172F97EA2315D10C0052EA83 /* SuccessMessage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
