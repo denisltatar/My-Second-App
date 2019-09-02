@@ -26,24 +26,24 @@
                                 <rect key="frame" x="-617" y="472" width="1040" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Porsche Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-IA-48Z">
-                                <rect key="frame" x="-55" y="107" width="525" height="280"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFn-pd-Ui0">
+                                <rect key="frame" x="52" y="499" width="286" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" image="Button"/>
+                                <connections>
+                                    <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="THg-kr-0th"/>
+                                </connections>
+                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Upper Design" translatesAutoresizingMaskIntoConstraints="NO" id="AW2-65-n0X">
                                 <rect key="frame" x="0.0" y="-85" width="414" height="235"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J54-oC-U4L">
-                                <rect key="frame" x="62" y="499" width="286" height="42"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image-4" translatesAutoresizingMaskIntoConstraints="NO" id="4jC-Z8-orc">
+                                <rect key="frame" x="148" y="495" width="94" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Button"/>
-                                <connections>
-                                    <action selector="continueButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcU-xe-LRG"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Continue Text" translatesAutoresizingMaskIntoConstraints="NO" id="HVO-TE-yRr">
-                                <rect key="frame" x="143" y="490" width="125" height="60"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Porsche Logo" translatesAutoresizingMaskIntoConstraints="NO" id="AbS-IA-48Z">
+                                <rect key="frame" x="44" y="132" width="323" height="172"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -404,10 +404,10 @@
         <image name="Change Temp Text" width="263" height="13"/>
         <image name="Close Text" width="75" height="13"/>
         <image name="Contact Mechanic Text" width="220" height="13"/>
-        <image name="Continue Text" width="108" height="13"/>
         <image name="Degrees Celsius Text" width="205" height="13"/>
         <image name="Email Address Text" width="176" height="13"/>
         <image name="Full Name Text" width="129" height="13"/>
+        <image name="Image-4" width="86" height="13"/>
         <image name="Message Text" width="104" height="13"/>
         <image name="Message Textbox" width="286" height="350"/>
         <image name="Mileage Text" width="93" height="13"/>
