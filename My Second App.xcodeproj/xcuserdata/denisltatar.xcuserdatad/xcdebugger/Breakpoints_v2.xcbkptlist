@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "29EEFC59-C2BA-4DCE-BD32-CCBC06466CD1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F8DE8375-9360-40B6-9803-0FECD206F720"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "My Second App/ContactMechanic.swift"
+            timestampString = "588725819.5508569"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "ContactMechanic"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "F8DE8375-9360-40B6-9803-0FECD206F720 - e36200ed7fafe897"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Second_App.ContactMechanic.messageField.getter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "My Second App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denisltatar/Desktop/My%20Second%20App/My%20Second%20App/My%20Second%20App/ContactMechanic.swift"
+                  timestampString = "588632579.266234"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "86">
+               </Location>
+               <Location
+                  uuid = "F8DE8375-9360-40B6-9803-0FECD206F720 - f617f58064d349b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Second_App.ContactMechanic.messageField.setter : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "My Second App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denisltatar/Desktop/My%20Second%20App/My%20Second%20App/My%20Second%20App/ContactMechanic.swift"
+                  timestampString = "588632579.27276"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "F8DE8375-9360-40B6-9803-0FECD206F720 - d84fd9cc28fb0da8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Second_App.ContactMechanic.messageField.modify : Swift.Optional&lt;__C.UITextField&gt;"
+                  moduleName = "My Second App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denisltatar/Desktop/My%20Second%20App/My%20Second%20App/My%20Second%20App/ContactMechanic.swift"
+                  timestampString = "588632579.281669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  uuid = "F8DE8375-9360-40B6-9803-0FECD206F720 - abe8e498c05def9a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Second_App.ContactMechanic.messageField.modify : Swift.Optional&lt;__C.UITextField&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "My Second App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denisltatar/Desktop/My%20Second%20App/My%20Second%20App/My%20Second%20App/ContactMechanic.swift"
+                  timestampString = "588632579.284206"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "F8DE8375-9360-40B6-9803-0FECD206F720 - 7a192623de2501ec"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Second_App.ContactMechanic.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; My_Second_App.ContactMechanic"
+                  moduleName = "My Second App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denisltatar/Desktop/My%20Second%20App/My%20Second%20App/My%20Second%20App/ContactMechanic.swift"
+                  timestampString = "588632579.288005"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "423">
+               </Location>
+               <Location
+                  uuid = "F8DE8375-9360-40B6-9803-0FECD206F720 - d10688264afaa5a8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "My_Second_App.ContactMechanic.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;My_Second_App.ContactMechanic&gt;"
+                  moduleName = "My Second App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denisltatar/Desktop/My%20Second%20App/My%20Second%20App/My%20Second%20App/ContactMechanic.swift"
+                  timestampString = "588632579.30495"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "343">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
